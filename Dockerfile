@@ -13,7 +13,6 @@ RUN python3 hola_mundo.py
 # Copia el archivo HTML generado al directorio de trabajo del contenedor
 COPY holamundo.html /app/
 
-
 # Usa la misma imagen base de Python para servir el archivo HTML directamente
 FROM python:latest
 
