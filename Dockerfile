@@ -2,7 +2,7 @@
 FROM python:latest
 
 # Copia el archivo Python al directorio de trabajo del contenedor
-COPY /home/ubuntu/Python-HelloWorld-Docker/hola_mundo.py /app/
+COPY hola_mundo.py /app/
 
 # Compila el archivo Python para generar holamundo.html
 RUN python3 hola_mundo.py
