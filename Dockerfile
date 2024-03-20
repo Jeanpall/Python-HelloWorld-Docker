@@ -20,5 +20,8 @@ FROM nginx:latest
 # Copia el archivo HTML generado al directorio de trabajo del servidor nginx
 COPY --from=builder /app/holamundo.html /usr/share/nginx/html/
 
-# Expone el puerto en el que el servidor web estará escuchando
-EXPOSE 80
+# Copia el archivo de configuración personalizado de Nginx al contenedor
+COPY nginx.conf /etc/nginx/nginx.conf
+
+# Exponer el puerto que deseas utilizar
+EXPOSE 8010
