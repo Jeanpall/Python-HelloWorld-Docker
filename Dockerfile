@@ -17,4 +17,4 @@ COPY holamundo.html /app/
 EXPOSE 8010
 
 # Ejecuta el servidor web para servir el archivo HTML
-CMD ["python", "-m", "http.server", "8010", "--directory", "/app", "holamundo.html"]
+CMD ["python", "-m", "http.server", "8010", "holamundo.html"]
