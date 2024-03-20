@@ -21,4 +21,4 @@ FROM nginx:latest
 COPY --from=builder /app/holamundo.html /usr/share/nginx/html/
 
 # Expone el puerto en el que el servidor web estará escuchando
-EXPOSE 8010
+EXPOSE 80
