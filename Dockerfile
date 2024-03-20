@@ -11,4 +11,4 @@ WORKDIR /app
 EXPOSE 8010
 
 # Ejecuta un servidor web Python para servir el archivo HTML directamente
-CMD ["python", "-m", "http.server"]
+CMD ["python", "-m", "http.server", "8010"]
