@@ -21,7 +21,7 @@ FROM nginx:latest
 COPY --from=builder /app/holamundo.html /usr/share/nginx/html/
 
 # Copia el archivo de configuración personalizado de Nginx al contenedor
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY config/nginx.conf /etc/nginx/nginx.conf
 
 # Exponer el puerto que deseas utilizar
 EXPOSE 8010
