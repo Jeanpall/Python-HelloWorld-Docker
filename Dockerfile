@@ -11,7 +11,7 @@ RUN python3 hola_mundo.py
 WORKDIR /app
 
 # Copia el archivo HTML generado al directorio de trabajo del contenedor
-COPY /home/ubuntu/Python-HelloWorld-Docker/holamundo.html /app/
+COPY holamundo.html /app/
 
 # Expone el puerto en el que el servidor web estará escuchando
 EXPOSE 8010
